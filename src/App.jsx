@@ -7,12 +7,13 @@ import OrganizationLogin from './pages/OrganizationLogin';
 import OrganizationSignup from './pages/OrganizationSignup';
 import UserDashboard from './pages/UserDashboard';
 import HospitalDetail from './pages/HospitalDetail';
+import HospitalDashboard from './pages/HospitalDashboard';
 function App() {
   return (
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={< Homepage  />} />
+          <Route path="/" element={< HospitalDashboard  />} />
           <Route path="/user-login" element={<UserLogin />} />
           <Route path="/user-signup" element={<UserSignup />} />
           <Route path="/org-login" element={<OrganizationLogin />} />
