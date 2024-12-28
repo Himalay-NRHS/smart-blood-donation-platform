@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
 import { AlertCircle } from 'lucide-react'
+import { Link } from 'react-router-dom';
 
 export default function OrganizationSignup() {
   const [formData, setFormData] = useState({
@@ -49,7 +50,7 @@ export default function OrganizationSignup() {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-100 to-blue-200">
+    <div className="flex items-center pt-[6%] pb-16 justify-center min-h-screen bg-gradient-to-r from-blue-100 to-blue-200">
       <Card className="w-[450px]">
         <CardHeader>
           <CardTitle>Organization Signup</CardTitle>
@@ -158,7 +159,9 @@ export default function OrganizationSignup() {
           </form>
         </CardContent>
         <CardFooter className="flex justify-between">
-          <Button variant="outline">Cancel</Button>
+          <Link to="/">
+          <Button variant="outline"   >Cancel</Button>
+          </Link>
           <Button type="submit" onClick={handleSubmit}>Sign Up</Button>
         </CardFooter>
       </Card>

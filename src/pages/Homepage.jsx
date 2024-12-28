@@ -4,13 +4,16 @@ import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Github, Users, Droplet, Hospital, Calendar, Bell, Heart, Mail, UserPlus, LogIn } from 'lucide-react';
+import Navbar from './Navbar';
 
 const Homepage = () => {
-  const [registeredUsers, setRegisteredUsers] = useState(1000);
-  const [totalBloodDonated, setTotalBloodDonated] = useState(5000);
+  const [registeredUsers, setRegisteredUsers] = useState(2);
+  const [totalBloodDonated, setTotalBloodDonated] = useState(400);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-red-50 to-white pt-16">
+              <Navbar />
+
       {/* Hero Section */}
       <section id="home" className="relative py-20 overflow-hidden">
         <div className="container mx-auto px-4">
@@ -163,7 +166,7 @@ const Homepage = () => {
             <p className="text-xl mb-4">Join us in our mission to save lives through blood donation.</p>
           </div>
           <div className="flex justify-center space-x-6 mb-8">
-            <a href="https://github.com/your-repo-link" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors">
+            <a href="https://github.com/Himalay-NRHS/smart-blood-donation-platform" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors">
               <Github className="h-6 w-6" />
             </a>
             <a href="mailto:himalayrekha@gmail.com" className="hover:text-red-500 transition-colors">

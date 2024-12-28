@@ -5,6 +5,8 @@ import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card"
+import { Link } from 'react-router-dom';
+
 
 export default function UserSignup() {
   const [formData, setFormData] = useState({
@@ -38,7 +40,7 @@ export default function UserSignup() {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-red-100 to-red-200">
+    <div className="flex items-center pt-[6%] pb-16 justify-center min-h-screen bg-gradient-to-r from-red-100 to-red-200">
       <Card className="w-[450px]">
         <CardHeader>
           <CardTitle>User Signup</CardTitle>
@@ -151,7 +153,9 @@ export default function UserSignup() {
           </form>
         </CardContent>
         <CardFooter className="flex justify-between">
+          <Link to="/">
           <Button variant="outline">Cancel</Button>
+          </Link>
           <Button type="submit">Sign Up</Button>
         </CardFooter>
       </Card>

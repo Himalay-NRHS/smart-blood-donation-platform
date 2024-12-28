@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between p-4">
         <div className="flex items-center space-x-2">
         <Heart className="h-8 w-8 text-red-500" />
-
+;
           <span className="text-2xl font-bold text-gray-800">LifeFlow</span>
         </div>
         
